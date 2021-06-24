@@ -12,7 +12,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container py-5">
         <div class="card">
             <div class="card-header bg-primary text-white text-center">
                 Tabel Data Mahasiswa
@@ -21,14 +21,13 @@
                 <div class="form-group">
                     <a href="input_mahasiswa.php" class="float-end btn btn-primary">Tambah Data</a>
                     <div class="float-start">
-                        <div class="input-group">
-                            <input type="search" class="form-control shadow-none" id="mySearch" placeholder="Cari.... ">
+                        <div class="input-group search_field">
+                            <input type="search" class="search form-control shadow-none">
+                            <input type="submit" value="Cari" id="search" class="btn btn-primary shadow-none">
                         </div>
                     </div>
                 </div>
-
                 <br><br>
-                
                 <table class="table table-bordered" id="tb_id">
                     <thead>
                         <tr class="header bg-primary text-dark text-center">
@@ -72,8 +71,8 @@
     </div>
     
     <script>
-        $("#mySearch").on("keyup", function() {
-            var value = $(this).val().toLowerCase();
+        $("#search").on("click", function() {
+            var value = $(".search").val().toLowerCase();
             $("#myTable tr").filter(function() {
                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });

@@ -11,7 +11,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <div class="container col-6">
+    <div class="container py-5 col-7">
         <div class="card">
             <div class="card-header bg-primary text-white text-center">
                 Login Mahasiswa
@@ -20,13 +20,11 @@
             <div class="card-body">
                 <form action="" method="POST" class="form-item">
                     <div class="input-group mb-3">
-                        <span class="input-group-text">NPM</span>
-                        <input type="text" name="npm" class="form-control" placeholder="Masukkan NPM" required>
+                        <input type="text" name="npm" class="form-control" maxlength="8" placeholder="Masukkan NPM" required>
                     </div>
 
                     <div class="input-group mb-3">
-                        <span class="input-group-text">Password</span>
-                        <input type="password" name="password" class="form-control" placeholder="Masukkan Password" required>
+                        <input type="password" name="password" class="form-control" maxlength="25" placeholder="Masukkan Password" required>
                     </div>
 
                     <div class="form-group">

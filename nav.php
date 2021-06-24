@@ -6,9 +6,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="nav navbar-nav ms-auto">
             <?php
-                if(!isset($_SESSION["npm"])){
-                    echo "<li class='nav-item'><a class='nav-link active' href='login.php'>Masuk</a></li>";
-                } else {
+                if(isset($_SESSION["npm"])){
                     echo "<li class='nav-item'><a class='nav-link active' href='logout.php'>Keluar</a></li>";
                 }
             ?>

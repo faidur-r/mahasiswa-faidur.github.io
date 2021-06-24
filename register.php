@@ -11,7 +11,7 @@
     <script src="js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <div class="container col-6">
+    <div class="container py-5 col-6">
         <div class="card">
             <div class="card-header bg-primary text-white text-center">
                 Register Mahasiswa
@@ -20,22 +20,18 @@
                 <?php echo isset($data['notiv']); ?>
                 <form action="" method="POST" onSubmit="return myRegister()">
                     <div class="input-group mb-3">
-                        <span class="input-group-text">NPM</span>
                         <input type="text" name="npm" class="form-control" placeholder="Masukkan NPM" required>
                     </div>
 
                     <div class="input-group mb-3">
-                        <span class="input-group-text">Nama</span>
                         <input type="text" name="nama" class="form-control" placeholder="Masukkan Nama Lengkap" required>
                     </div>
 
                     <div class="input-group mb-3">
-                        <span class="input-group-text">Password</span>
                         <input type="password" name="password" id="password" class="form-control" placeholder="Masukkan Password" required>
                     </div>
 
                     <div class="input-group mb-3">
-                        <span class="input-group-text">Konfirmasi Password</span>
                         <input type="password" name="re-password" id="re-password" class="form-control" placeholder="Masukkan Password" required>
                     </div>
 
